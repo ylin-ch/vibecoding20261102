@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4eb">
+  <meta name="description" content="A tiny interactive page made to explore GitHub Pages.">
+  <title>A small corner of the internet</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Small corner, home"><span aria-hidden="true">✳</span> small corner<span class="brand-dot">.</span></a>
+    <span class="header-note">A GITHUB PAGES EXPERIMENT ↗</span>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> HELLO, INTERNET</p>
+        <h1 id="hero-title">A small corner<br>of the <em>internet.</em></h1>
+        <p class="description">Just a tiny page with a big address. Made with three simple files and a little curiosity about putting something on the web.</p>
+        <div class="actions">
+          <a class="button dark" href="#playground">Explore the page <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://github.com/ylin-ch/vibecoding20261102">View the code ↗</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-grid"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="planet">✳</div><i class="dot one"></i><i class="dot two"></i>
+        <span class="art-caption">A LITTLE SPACE TO CALL YOUR OWN</span>
+      </div>
+    </section>
+    <div class="ticker" aria-label="Page details"><span>✳ &nbsp; NO FRAMEWORK</span><span>✳ &nbsp; NO BUILD STEP</span><span>✳ &nbsp; JUST THE WEB</span></div>
+    <section class="playground" id="playground" aria-labelledby="playground-title">
+      <div class="section-copy">
+        <p class="eyebrow"><span></span> THE FUN PART</p>
+        <h2 id="playground-title">Leave a little <em>signal.</em></h2>
+        <p>Press the button and watch this corner light up. Your count stays in this browser, so you can come back and pick up where you left off.</p>
+      </div>
+      <div class="signal-card">
+        <div class="signal-top"><span>YOUR SIGNALS</span><span>↗</span></div>
+        <div class="signal-count" id="signal-count" aria-live="polite">0</div>
+        <div class="signal-bottom"><span>Little clicks, big universe.</span><button class="button light" id="signal-button" type="button">Send a signal <span aria-hidden="true">✳</span></button></div>
+        <div class="sparkle-field" id="sparkle-field" aria-hidden="true"></div>
+      </div>
+    </section>
+    <section class="footer-panel" aria-labelledby="footer-title">
+      <div><p class="eyebrow"><span></span> MADE TO GO LIVE</p><h2 id="footer-title">The web starts<br>somewhere.</h2></div>
+      <div class="footer-aside"><p>This page lives in a GitHub repository. Once GitHub Pages is enabled, it gets a public address you can share with anyone.</p><button class="text-link copy-link" id="copy-link" type="button">Copy this page’s link ↗</button><span class="copy-status" id="copy-status" role="status" aria-live="polite"></span></div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© <span id="year">2026</span> small corner.</span><span>Built with HTML, CSS &amp; a little JavaScript.</span></footer>
+</body>
+</html>
